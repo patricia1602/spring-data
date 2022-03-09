@@ -10,17 +10,18 @@ import br.com.alura.spring.data.repository.CargoRepository;
 @Service
 public class CrudCargoService {
 
-    private final CargoRepository cargoRepository ;
+    public Boolean system = true;
+    private final CargoRepository cargoRepository;
 
-    public CrudCargoService(CargoRepository cargoRepository){
+    public CrudCargoService(CargoRepository cargoRepository) {
         this.cargoRepository = cargoRepository;
     }
 
-    public void inicial(Scanner scanner){
+    public void inicial(Scanner scanner) {
         salvar(scanner);
     }
 
-    public void salvar(Scanner scanner){
+    public void salvar(Scanner scanner) {
         System.out.println("Descricao do cargo");
         String descricao = scanner.next();
         Cargo cargo = new Cargo();
