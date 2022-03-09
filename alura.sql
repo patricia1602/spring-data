@@ -9,3 +9,8 @@ primary key(id)
 );
 
 select * from cargos;
+
+insert into cargos
+(descricao) 
+values
+('DESENVOLVEDOR DE SOFTWARE');
