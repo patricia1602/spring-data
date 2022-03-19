@@ -5,9 +5,11 @@ import java.util.Scanner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import br.com.alura.spring.data.service.CrudCargoService;
 
+@EnableJpaRepositories
 @SpringBootApplication
 public class SpringDataApplication implements CommandLineRunner {
 
